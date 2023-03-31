@@ -1,0 +1,317 @@
+/* Fonte Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Configuração Global */
+
+:root {
+    --color1: #a434f4;
+    --color2: #2f68af;
+    --color3: #74dcbc;
+    --color4: #f5f5f5;
+    --color5: #080d0d;
+
+    --Fonte-Principal: 'Ubuntu', sans-serif;
+    --Fonte-Padrão: Arial, Helvetica, sans-serif;
+}
+
+/*Configuração Geral*/
+
+.bg {
+    background-image: url('../home/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.Container {
+    min-height: 99vh;
+    margin: auto;
+    font-family: var(--Fonte-Principal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form {
+    margin: 12px 0;
+}
+
+body {
+    font-family: var(--Fonte-Principal);
+}
+
+p {
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+}
+
+p>a {
+    text-decoration: none;
+
+}
+
+/* Index */
+
+.index-text {
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    color: var(--color4);
+    background-color: #2f69afd8;
+}
+
+.index-form {
+    width: 350px;
+    padding: 34px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+.index-text-1 {
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    color: var(--color4);
+    background-color: #2f69afd8;
+}
+
+.index-form-1 {
+    width: 350px;
+    padding: 56px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+
+/* Cadastro */
+
+.cadastro-text {
+    height: 415px;
+    width: 400px;
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+    color: var(--color4);
+    background-color: #2f69afd8;
+}
+
+.cadastro-form {
+    width: 350px;
+    padding: 0px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+.cadastro-text-1 {
+    height: 415px;
+    width: 400px;
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+    color: var(--color4);
+    background-color: #2f69afd8;
+}
+
+.cadastro-form-1 {
+    height: 415px;
+    width: 350px;
+    padding: 0px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+/* Formulário */
+
+#email,
+#senha {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--color5);
+    border-radius: 0;
+}
+
+/* Home */
+
+/* Container */
+
+.container {
+    min-height: 96vh;
+    margin: auto;
+    flex-wrap: wrap;
+    font-family: var(--Fonte-Principal);
+    padding: 70px 0;
+}
+
+/* Navbar */
+
+nav {
+    background-color: var(--color2);
+}
+
+
+/* Header */
+
+.main-title {
+    color: var(--color5);
+    margin: 30px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Footer */
+
+.copy-container {
+    margin: 0;
+    padding: 0;
+}
+
+#copy-area {
+    background-color: var(--color2);
+}
+
+#copy-area .copy-container {
+    padding: .5px 0;
+    text-align: center;
+}
+
+#copy-area .copy-container p {
+    margin-bottom: 0;
+    color: var(--color4);
+}
+
+/* Responsividade */
+
+@media(max-width: 950px) {
+
+    /* Index */
+
+    .index-text-1 {
+        height: 420px;
+        width: 400px;
+        color: var(--color4);
+    }
+
+    .index-form-1 {
+        height: 420px;
+        padding: 10px 20px;
+        width: 330px;
+    }
+
+    .index-text-1>p {
+        font-size: 14px;
+    }
+
+    .index-text>p {
+        font-size: 14px;
+    }
+
+    .index-text {
+        height: 420px;
+        width: 400px;
+        color: var(--color4);
+    }
+
+    .index-form {
+        height: 420px;
+        padding: 10px 20px;
+        width: 330px;
+    }
+
+    /* Index - Apaga o <p> */
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+
+    /* Configuração Geral */
+
+    .bg {
+        background-image: url('../home/img/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 97vw;
+    }
+
+    .Container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Index */
+
+    .index-text-1 {
+        height: 300px;
+        width: 390px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .index-form-1 {
+        height: 370px;
+        padding: 10px 20px;
+        width: 390px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .index-text {
+        height: 300px;
+        width: 390px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .index-form {
+        height: 420px;
+        padding: 10px 20px;
+        width: 390px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    /* Index - Apaga o <p> */
+
+    .index-text-1>p {
+        display: none;
+    }
+
+    .index-text>p {
+        display: none;
+    }
+
+    /* Cadastro */
+
+    .cadastro-text {
+        height: 370px;
+        width: 390px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .cadastro-form {
+        border-radius: 0 0 15px 15px;
+        padding: 10px 20px;
+        width: 390px;
+    }
+
+    .cadastro-text-1 {
+        height: 370px;
+        width: 390px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .cadastro-form-1 {
+        height: 370px;
+        border-radius: 0 0 15px 15px;
+        padding: 10px 20px;
+        width: 390px;
+    }
+}
