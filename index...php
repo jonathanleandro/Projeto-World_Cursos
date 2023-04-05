@@ -43,72 +43,73 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 </head>
 <!-- Exibe informações sobre a plataforma -->
+<body>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row input-box">
+                <div class="col-md-6 index-text">
+                    <h1>World Cursos</h1>
+                    <br>
+                    <p>Para aqueles que buscam:</p>
+                    <ul id="about-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Adquirir novas habilidades
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Atinjir o seu Real Potencial
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Alcançar a sonhada promoção
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Dar um upgrade em seus projetos
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Dar os proximos passos na Carreira
+                        </li>
+    
+                    </ul>
+                    <br>
+                    <p>Acesse a qualquer hora ou lugar em qualquer idioma</p>
+                    <p>Uma ampla seleção de cursos com os melhores preços do mercado.</p>
+                    <p class="hidden">Tudo que você precisa para Aprender, Crescer e se Desenvolver.</p>
+    
+                    <h5>Crie sua conta e comece agora !</h5>
+                </div>
 
-<body class="bg">
-    <div class="Container">
-        <div class=" justify-content-center">
-            <div class="col index-text">
-                <h1>World Cursos</h1>
-                <br>
-                <p>Para aqueles que buscam:</p>
-                <ul id="about-list">
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Adquirir novas habilidades
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Atinjir o seu Real Potencial
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Alcançar a sonhada promoção
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Dar um upgrade em seus projetos
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Dar os proximos passos na Carreira
-                    </li>
-
-                </ul>
-                <br>
-                <p>Acesse a qualquer hora ou lugar em qualquer idioma</p>
-                <p>Uma ampla seleção de cursos com os melhores preços do mercado.</p>
-                <p class="hidden">Tudo que você precisa para Aprender, Crescer e se Desenvolver.</p>
-
-                <h5>Crie sua conta e comece agora !</h5>
+                <div class="col-md-6 index-form">
+                    <form action="teste_login.php" method="POST">
+                        <fieldset>
+                            <legend class="mb-4 text-center">Acessar</legend>
+                            <p style='color: red;'>Erro: Usuário ou senha inválidos!</p>
+                            <div class="mb-3 form-floating">
+                                <input type="email" class="form-control" name="usuario" id="email" required="required">
+                                <label for="floatingInput">Email</label>
+                            </div>
+        
+                            <div class="mb-4 form-floating">
+                                <input type="password" class="form-control" id="senha" name="senha_usuario" minlength="8"
+                                    size="8" required="required">
+                                <label for="floatingInput">Senha</label>
+                            </div>
+        
+                            <div class="mb-3 form-floating">
+                                <input type="submit" value="Acessar" class="btn btn-primary" name="SendLogin">
+                            </div>
+                            <!-- Envia o usuário para a página de cadastro -->
+                            <p>Ainda não tem uma conta ?</p>
+                            <p>
+                                <a href="cadastro.php" target="_self" name="enviar" rel="next">Cadastre-se aqui</a>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
-        </div>
-        <!-- Formulário de Login -->
-        <div class="index-form">
-            <form action="teste_login.php" method="POST">
-                <fieldset>
-                    <legend class="mb-4 text-center">Acessar</legend>
-                    <p style='color: red;'>Erro: Usuário ou senha inválidos!</p>
-                    <div class="mb-3 form-floating">
-                        <input type="email" class="form-control" name="usuario" id="email" required="required">
-                        <label for="floatingInput">Email</label>
-                    </div>
-
-                    <div class="mb-3 form-floating">
-                        <input type="password" class="form-control" id="senha" name="senha_usuario" minlength="8"
-                        size="8" required="required">
-                        <label for="floatingInput">Senha</label>
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="submit" value="Acessar" class="btn btn-primary" name="SendLogin">
-                    </div>
-                    <!-- Envia o usuário para a página de cadastro -->
-                    <p>Ainda não tem uma conta ?</p>
-                    <p>
-                        <a href="cadastro.php" target="_self" name="enviar" rel="next">Cadastre-se aqui</a>
-                    </p>
-                </fieldset>
-            </form>
         </div>
     </div>
 </body>

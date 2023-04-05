@@ -3,6 +3,11 @@
 
 /* Configuração Global */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color1: #a434f4;
     --color2: #2f68af;
@@ -16,26 +21,23 @@
 
 /*Configuração Geral*/
 
-.bg {
+.wrapper{
     background-image: url('../home/img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    margin: auto;
+    padding: 0 20px 0 20px;
 }
-
-.Container {
-    min-height: 99vh;
-    margin: auto;
-    font-family: var(--Fonte-Principal);
-
+.main{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+}
+.input-box{
+    width: 900px;
+    height: 556px;
+    border-radius: 10px;
 }
 
 form {
@@ -62,70 +64,30 @@ p>a {
 
 /* Index */
 
-.index-text {
-    width: 600px;
-    padding: 20px;
+legend{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.form-floating{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px;
+}
+
+.index-text{
     border-radius: 15px 0 0 15px;
     color: var(--color4);
-    background-color: #2f69afd8;
+    background-color: var(--color2);
 }
 
-.index-form {
-    width: 350px;
-    padding: 34px 20px;
-    border-radius: 0 15px 15px 0;
+.index-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: rgba(255, 255, 255, 0.842);
-}
-
-.index-text-1 {
-    width: 600px;
-    padding: 20px;
-    border-radius: 15px 0 0 15px;
-    color: var(--color4);
-    background-color: #2f69afd8;
-}
-
-.index-form-1 {
-    width: 350px;
-    padding: 56px 20px;
     border-radius: 0 15px 15px 0;
-    background-color: rgba(255, 255, 255, 0.842);
-}
-
-
-/* Cadastro */
-
-.cadastro-text {
-    height: 415px;
-    width: 400px;
-    padding: 15px 20px;
-    border-radius: 15px 0 0 15px;
-    color: var(--color4);
-    background-color: #2f69afd8;
-}
-
-.cadastro-form {
-    width: 350px;
-    padding: 0px 20px;
-    border-radius: 0 15px 15px 0;
-    background-color: rgba(255, 255, 255, 0.842);
-}
-
-.cadastro-text-1 {
-    height: 415px;
-    width: 400px;
-    padding: 15px 20px;
-    border-radius: 15px 0 0 15px;
-    color: var(--color4);
-    background-color: #2f69afd8;
-}
-
-.cadastro-form-1 {
-    height: 415px;
-    width: 350px;
-    padding: 0px 20px;
-    border-radius: 0 15px 15px 0;
-    background-color: rgba(255, 255, 255, 0.842);
 }
 
 /* Formulário */
@@ -155,7 +117,6 @@ p>a {
 nav {
     background-color: var(--color2);
 }
-
 
 /* Header */
 
@@ -189,92 +150,21 @@ nav {
 
 /* Responsividade */
 
-@media(max-width: 950px) {
-
-    /* Index */
-
-    .index-text-1 {
-        height: 420px;
-        width: 400px;
-        color: var(--color4);
-    }
-
-    .index-form-1 {
-        height: 420px;
-        padding: 10px 20px;
-        width: 330px;
-    }
-
-    .index-text-1>p {
-        font-size: 14px;
-    }
-
-    .index-text>p {
-        font-size: 14px;
-    }
-
-    .index-text {
-        height: 420px;
-        width: 400px;
-        color: var(--color4);
-    }
-
-    .index-form {
-        height: 420px;
-        padding: 10px 20px;
-        width: 330px;
-    }
-
-    /* Index - Apaga o <p> */
-
-    .hidden {
-        display: none;
-    }
-}
-
-@media(max-width: 768px) {
+@media only screen and (max-width: 768px){
 
     /* Configuração Geral */
 
-    .bg {
-        background-image: url('../home/img/background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 97vw;
-    }
-
-    .Container {
-        display: flex;
-        flex-direction: column;
+    .input-box{
+        height: 750px;
     }
 
     /* Index */
 
-    .index-text-1 {
-        height: 300px;
-        width: 390px;
+    .index-text{
         border-radius: 15px 15px 0 0;
     }
 
-    .index-form-1 {
-        height: 370px;
-        padding: 10px 20px;
-        width: 390px;
-        border-radius: 0 0 15px 15px;
-    }
-
-    .index-text {
-        height: 300px;
-        width: 390px;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .index-form {
-        height: 420px;
-        padding: 10px 20px;
-        width: 390px;
+    .index-form{
         border-radius: 0 0 15px 15px;
     }
 
@@ -288,30 +178,4 @@ nav {
         display: none;
     }
 
-    /* Cadastro */
-
-    .cadastro-text {
-        height: 370px;
-        width: 390px;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .cadastro-form {
-        border-radius: 0 0 15px 15px;
-        padding: 10px 20px;
-        width: 390px;
-    }
-
-    .cadastro-text-1 {
-        height: 370px;
-        width: 390px;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .cadastro-form-1 {
-        height: 370px;
-        border-radius: 0 0 15px 15px;
-        padding: 10px 20px;
-        width: 390px;
-    }
 }

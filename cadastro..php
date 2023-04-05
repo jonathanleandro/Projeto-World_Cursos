@@ -31,10 +31,12 @@
 </head>
 <!-- Exibe informações sobre a plataforma -->
 
-<body class="bg">
-    <div class="Container">
-        <div class="cadastro-text">
-            <h1>World Cursos</h1>
+<body>
+<div class="wrapper">
+        <div class="container main">
+            <div class="row input-box">
+                <div class="col-md-6 index-text">
+                <h1>World Cursos</h1>
             <br />
             <p>Ao se cadastrar, você ganha acesso a itens exclusivos:</p>
             <ul id="about-list">
@@ -59,13 +61,15 @@
                     Suporte 24 Horas !
                 </li>
             </ul>
+            <p>Acesse a qualquer hora ou lugar em qualquer idioma</p>
+            <p>Uma ampla seleção de cursos com os melhores preços do mercado.</p>
+            <p class="hidden">Tudo que você precisa para Aprender, Crescer e se Desenvolver.</p>
             <br />
             <h5>Crie sua conta e comece agora !</h5>
-        </div>
+                </div>
 
-        <!-- Formulário de Cadastro -->
-        <div class="cadastro-form">
-            <form action="cadastro_usuario.php" method="post">
+                <div class="col-md-6 index-form">
+                <form action="cadastro_usuario.php" method="post">
                 <fieldset>
                     <legend class="text-center mb-4">Cadastrar</legend>
                     <p style='color: #f00;'>Erro: Usuário já utilizado!</p>
@@ -80,7 +84,7 @@
                         <label for="floatingInput">Digite uma Senha</label>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="submit" value="cadastar" class="btn btn-primary" name="enviar">
                     </div>
                     <!-- Envia o usuário para a página de Login -->
@@ -90,6 +94,8 @@
                     </p>
                 </fieldset>
             </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
